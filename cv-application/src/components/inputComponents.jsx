@@ -46,9 +46,7 @@ function Education({titleOfStudy, setTitleOfStudy, schoolName, setSchoolName}) {
     )
 }
 
-function Experience(companyName, setCompanyName, positionTitle, setPositionTitle,
-                     responsibilities, setResponsibilities, startDate, setStartDate, endDate, setEndDate
-    ) {
+function Experience({companyName, setCompanyName, positionTitle, setPositionTitle, responsibilities,setResponsibilities, startOfEmployment, setStartOfEmployment, endOfEmployment, setEndOfEmployment}) {
 
     return (
     <div className="inputForm">
@@ -69,15 +67,16 @@ function Experience(companyName, setCompanyName, positionTitle, setPositionTitle
         </div>
         <div >
             <label>Start date of employment: </label>
-            <input type="text" name="start date of employment" value={startDate}
-            onChange={(event) => setStartDate(event.target.value)}/>
+            <input type="text" name="start date of employment" value={startOfEmployment}
+            onChange={(event) => setStartOfEmployment(event.target.value)}/>
         </div>
         <div >
             <label>End date of employment: </label>
-            <input type="text" name="end date of employment" value={endDate}
-            onChange={(event) => setEndDate(event.target.value)}/>
+            <input type="text" name="end date of employment" value={endOfEmployment}
+            onChange={(event) => setEndOfEmployment(event.target.value)}/>
         </div>
-    </div>)
+    </div>
+    )
 }
 
 

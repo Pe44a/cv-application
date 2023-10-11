@@ -1,6 +1,6 @@
 
 
-function CvRender({name, lastName, email, phoneNumber, titleOfStudy, schoolName,companyName, positionTitle, responsibilities, startOfEmployment, endOfEmployment}) {
+function CvRender({name, lastName, email, phoneNumber, titleOfStudy, schoolName, companyName, positionTitle, responsibilities, startOfEmployment, endOfEmployment}) {
 
     return(
     <div>
