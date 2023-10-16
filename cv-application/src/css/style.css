@@ -2,8 +2,67 @@
     font-family: monospace;
 }
 
+#root{
+    display: flex;
+    justify-content: space-between;
+}
+
 .inputForm {
     border: 3px solid black;
     margin: 20px;
+    padding: 5px;
+}
+
+/* CV */
+.cv {
+    display: grid;
+    grid-template-columns: 1.7fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 600px;
+    height: calc(600px * 1.41);
+    border: 3px solid black;
+    margin: 20px;
+}
+
+.header {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/3;
+    gap: 20px;
+    background-color: #e9e9ff;
+    border-bottom: 2px solid black;
+}
+
+.fullName {
+    font-size: 30px;
+}
+
+.navBar {
+    grid-column: 1/2;
+    grid-row: 2/6;
+    border-right: 2px solid black;
+    padding: 5px;
+} 
+
+.contacts {
+
+}
+
+.education {
+
+}
+
+.experience {
+
+}
+
+.experienceChild {
+    
+}
+
+.main {
+    grid-column: 2/3;
+    grid-row: 2/6;
     padding: 5px;
 }
