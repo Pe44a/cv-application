@@ -3,24 +3,25 @@ function GeneralInfo({name, setName, lastName, setLastName, email, setEmail, pho
 
     return (
     <div className="inputForm">
-        <div >
-            <label>Enter your name: </label>
-            <input type="text" name="name" value={name}
+        <h1>General</h1>
+        <div className="inputLabel">
+            <div><label className="label">Enter your name: </label></div>
+            <input className="input" type="text" name="name" value={name}
              onChange={(event) => setName(event.target.value)}/>
         </div>
-        <div >
-            <label>Enter your last name: </label>
-            <input type="text" name="last name"  value={lastName}
+        <div className="inputLabel">
+            <div><label className="label">Enter your last name: </label></div>
+            <input className="input" type="text" name="last name"  value={lastName}
              onChange={(event) => setLastName(event.target.value)}/>
         </div>
-        <div >
-            <label>Email: </label>
-            <input type="email" name="email"  value={email} 
+        <div className="inputLabel">
+            <div><label className="label">Email: </label></div>
+            <input className="input" type="email" name="email"  value={email} 
             onChange={(event) => setEmail(event.target.value)}/>
         </div>
-        <div >
-            <label>Phone number: </label>
-            <input type="tel" name="phone number"  value={phoneNumber}  
+        <div className="inputLabel">
+            <div><label className="label">Phone number: </label></div>
+            <input className="input" type="tel" name="phone number"  value={phoneNumber}  
             onChange={(event) => setPhoneNumber(event.target.value)}/>
         </div>
     </div>
@@ -32,14 +33,15 @@ function Education({titleOfStudy, setTitleOfStudy, schoolName, setSchoolName}) {
 
     return (
     <div className="inputForm">
-        <div >
-            <label>Title of study: </label>
-            <input type="text" name="title of study" value={titleOfStudy} 
+        <h1>Education</h1>
+        <div className="inputLabel">
+            <div><label className="label">Title of study: </label></div>
+            <input className="input" type="text" name="title of study" value={titleOfStudy} 
             onChange={(event) => setTitleOfStudy(event.target.value)}/>
         </div>
-        <div >
-            <label>School name: </label>
-            <input type="text" name="school name" value={schoolName} 
+        <div className="inputLabel">
+            <div><label className="label">School name: </label></div>
+            <input className="input" type="text" name="school name" value={schoolName} 
             onChange={(event) => setSchoolName(event.target.value)}/>
         </div>
     </div>
@@ -50,29 +52,32 @@ function Experience({companyName, setCompanyName, positionTitle, setPositionTitl
 
     return (
     <div className="inputForm">
-        <div >
-            <label>Company name: </label>
-            <input type="text" name="company name" value={companyName}
+        <h1>Experience</h1>
+        <div className="inputLabel">
+            <div><label className="label">Company name: </label></div>
+            <input className="input" type="text" name="company name" value={companyName}
             onChange={(event) => setCompanyName(event.target.value)}/>
         </div>
-        <div >
-            <label>Position title: </label>
-            <input type="text" name="position title" value={positionTitle}
+        <div className="inputLabel">
+            <div><label className="label">Position title: </label></div>
+            <input className="input" type="text" name="position title" value={positionTitle}
             onChange={(event) => setPositionTitle(event.target.value)}/>
         </div>
-        <div >
-            <label>Main responsibilities: </label>
-            <input type="text" name="main responsibilities" value={responsibilities}
-            onChange={(event) => setResponsibilities(event.target.value)}/>
+        <div className="inputLabel">
+            <div><label className="label">Main responsibilities: </label></div>
+            <textarea className="input responsibilitiesInput" cols="20" rows="10"
+            value={responsibilities}
+            onChange={(event) => setResponsibilities(event.target.value)}></textarea>
+
         </div>
-        <div >
-            <label>Start date of employment: </label>
-            <input type="text" name="start date of employment" value={startOfEmployment}
+        <div className="inputLabel">
+            <div><label className="label">Start date of employment: </label></div>
+            <input className="input" type="text" name="start date of employment" value={startOfEmployment}
             onChange={(event) => setStartOfEmployment(event.target.value)}/>
         </div>
-        <div >
-            <label>End date of employment: </label>
-            <input type="text" name="end date of employment" value={endOfEmployment}
+        <div className="inputLabel">
+            <div><label className="label">End date of employment: </label></div>
+            <input className="input" type="text" name="end date of employment" value={endOfEmployment}
             onChange={(event) => setEndOfEmployment(event.target.value)}/>
         </div>
     </div>
