@@ -11,6 +11,7 @@ function CvRender({name, lastName, email, phoneNumber, titleOfStudy, schoolName,
         <div className="navBar">
             <div className="contacts">
                 <h1>Contacts</h1>
+
                 <ul>
                     <li>{email}</li>
                     <li>{phoneNumber}</li>

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { GeneralInfo, Education, Experience } from './inputComponents';
 import CvRender from "./cvRender";
+import DownloadButton from './downloadButton';
 
 
 function App() {
@@ -37,11 +38,14 @@ function App() {
             startOfEmployment={startOfEmployment} setStartOfEmployment={setStartOfEmployment}
             endOfEmployment={endOfEmployment} setEndOfEmployment={setEndOfEmployment}/>
         </div>
+        <div>
+        <DownloadButton/>
         <CvRender
          name={name} lastName={lastName} email={email} phoneNumber={phoneNumber}
          titleOfStudy={titleOfStudy} schoolName={schoolName} companyName={companyName}
          positionTitle={positionTitle} responsibilities={responsibilities}
          startOfEmployment={startOfEmployment} endOfEmployment={endOfEmployment}/>
+        </div>
 
     </>)
 }
