@@ -1,5 +1,5 @@
 
-function GeneralInfo({name, setName, lastName, setLastName, email, setEmail, phoneNumber, setPhoneNumber}) {
+function GeneralInfo({name, setName, lastName, setLastName, email, setEmail, phoneNumber, setPhoneNumber, aboutMe, setAboutMe}) {
 
     return (
     <div className="inputForm">
@@ -27,6 +27,13 @@ function GeneralInfo({name, setName, lastName, setLastName, email, setEmail, pho
             <div><label className="label">Phone number: </label></div>
             <input className="input" type="tel" name="phone number"  value={phoneNumber}  
             onChange={(event) => setPhoneNumber(event.target.value)}/>
+        </div>
+
+        <div className="inputLabel">
+            <div><label className="label">About me: </label></div>
+            <textarea className="input responsibilitiesInput" cols="20" rows="10"
+            value={aboutMe}
+            onChange={(event) => setAboutMe(event.target.value)}></textarea>
         </div>
     </div>
     )
