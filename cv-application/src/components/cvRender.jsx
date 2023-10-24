@@ -1,5 +1,6 @@
 
-
+// Renders cv
+// Gives option to update state by using useState
 function CvRender({name, lastName, email, phoneNumber, aboutMe, titleOfStudy, schoolName, companyName, positionTitle, responsibilities, startOfEmployment, endOfEmployment}) {
 
     return(

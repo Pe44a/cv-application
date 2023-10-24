@@ -49,7 +49,11 @@ function App() {
             />
         </div>
         <div>
+
+        {/* Button that will allow to download cv as pdf */}
         <DownloadButton/>
+
+        {/* Renders inputs */}
         <CvRender
          name={name} lastName={lastName} email={email} phoneNumber={phoneNumber} aboutMe={aboutMe}
          titleOfStudy={titleOfStudy} schoolName={schoolName} companyName={companyName}
