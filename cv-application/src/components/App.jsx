@@ -25,7 +25,9 @@ function App() {
 
 
     return(<>
-        <div className="inputs">
+        <div className="inputs-container">
+            <h1>CV generator</h1>
+            
             <GeneralInfo 
             name={name}  setName={setName}
             lastName={lastName} setLastName={setLastName}
@@ -48,7 +50,7 @@ function App() {
             endOfEmployment={endOfEmployment} setEndOfEmployment={setEndOfEmployment}
             />
         </div>
-        <div>
+        <div className='cv-container'>
 
         {/* Button that will allow to download cv as pdf */}
         <DownloadButton/>

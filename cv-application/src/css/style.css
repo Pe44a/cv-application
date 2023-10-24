@@ -11,13 +11,20 @@ h1 {
     border-bottom: 1px solid black;
 }
 
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    width: clamp(350px, 650px, 40%);
+}
+
 /* Input form */
 .inputForm {
+    flex: 1;
     border: 3px solid black;
     border-radius: 5px;
+    box-shadow: 5px 10px #888888;
     margin: 20px;
     padding: 5px;
-    width: 650px;
 }
 
 .label {
@@ -48,6 +55,7 @@ h1 {
     width: 560px;
     height: calc(560px * 1.41);
     border: 3px solid black;
+    box-shadow: 5px 10px #888888;
     margin: 20px;
     overflow-wrap: anywhere;
 }
@@ -91,4 +99,72 @@ h1 {
 
 #downloadButton:hover {
     background-color: lightgrey;
+}
+
+
+/* Optimization for mobile devices*/
+
+@media (max-width: 1000px) { 
+
+    #root{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputs-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 590px) { 
+
+    #root{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputs-container {
+        width: 90%;
+    }
+}
+
+
+/* CV optimization */
+@media(max-width:590px){
+    .cv-container{
+        transform: scale(0.9);
+        margin: -50px 0;
+    }
+}
+
+@media(max-width:550px){
+    .cv-container{
+        transform: scale(0.8);
+        margin: -100px 0;
+    }
+}
+
+@media(max-width:500px){
+    .cv-container{
+        transform: scale(0.7);
+        margin: -150px 0;
+    }
+}
+
+@media(max-width:450px){
+    .cv-container{
+        transform: scale(0.6);
+        margin: -200px 0;
+    }
+}
+
+@media(max-width:400px){
+    .cv-container{
+        transform: scale(0.55);
+        margin: -210px 0;
+    }
 }
