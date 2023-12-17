@@ -2,7 +2,7 @@
 
 I created this web application for creating and generating cv's in PDF format. It was my first time using React, and I had the opportunity to learn about the fundamental concepts of React, such as using useState and passing data between components via props.
 
-Check out website here: https://main--glistening-rabanadas-179e4d.netlify.app/
+Check out website here: https://cv-application-tau-seven.vercel.app/
 
 
 # Technologies Used
